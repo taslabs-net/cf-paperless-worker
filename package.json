@@ -1,0 +1,24 @@
+{
+  "name": "paperless-email-worker",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker for processing email attachments and uploading to R2 for paperless-ngx consumption",
+  "main": "worker.js",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "preview": "wrangler preview"
+  },
+  "keywords": [
+    "cloudflare",
+    "worker",
+    "email",
+    "paperless",
+    "document-management",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

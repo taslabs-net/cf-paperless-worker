@@ -1,0 +1,16 @@
+name = "paperless-email-worker"
+main = "worker.js"
+compatibility_date = "2024-05-28"
+
+# R2 bucket binding - will be automatically created during deployment
+[[r2_buckets]]
+binding = "R2_BUCKET"
+bucket_name = "paperless-documents"
+
+# Email routing - customize with your domain
+[env.production]
+route = { pattern = "paperless@yourdomain.com", custom_domain = true }
+
+# Enable logging
+[observability.logs]
+enabled = true

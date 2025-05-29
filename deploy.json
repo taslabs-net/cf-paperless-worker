@@ -1,0 +1,16 @@
+{
+  "name": "paperless-email-automation",
+  "description": "Email to Paperless Automation Worker - Processes email attachments and uploads to R2",
+  "repository": "https://github.com/your-username/paperless-email-automation",
+  "resources": {
+    "r2_buckets": [
+      {
+        "binding": "R2_BUCKET",
+        "bucket_name": "paperless-documents"
+      }
+    ]
+  },
+  "env_vars": {
+    "WORKER_NAME": "paperless-email-worker"
+  }
+}
